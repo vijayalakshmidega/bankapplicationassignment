@@ -1,0 +1,25 @@
+<div class="col-md-6 offset-md-3">
+    <h3> Tranfer Amount</h3>
+    <form (ngSubmit) = "onSubmit()">
+    
+        <div class="form-group">
+            <label>From Account</label>
+            <input type="text" class ="form-control" id = "fromaccountid"
+                [(ngModel)] = "transfers.fromAccountId" name = "fromaccountid">
+        </div>
+        <div class="form-group">
+            <label>To Account</label>
+            <input type="text" class ="form-control" id = "toaccountid"
+                [(ngModel)] = "transfers.toAccountId" name = "toaccountid">
+        </div>
+    
+        <div class="form-group">
+            <label> Amount </label>
+            <input type="text" class ="form-control" id = "amount"
+                [(ngModel)] = "transfers.amount" name = "amount">
+        </div>
+
+        <button class = "btn btn-success" type ="submit">Submit</button>
+    
+    </form>
+    </div> 
